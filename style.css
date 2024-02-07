@@ -1,0 +1,141 @@
+@charset 'UTF-8';
+
+body{
+    margin: 0px;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(61, 61, 255);
+}
+
+.left-login > h1{
+    color: yellow;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    width: 100%;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px 35px;
+    border-radius: 20px;
+    background-color: rgb(6, 148, 141);
+    box-shadow: 3px 2px 2px #00000056;
+}
+
+.card-login > h1{
+    color: yellow;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textfield > label{
+    color: yellow;
+}
+
+.textfield > input{
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 2px #00000056;
+}
+
+.textfield > input:hover{
+    background-color: rgb(175, 166, 166);
+}
+
+.btn-login{
+    color: yellow;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    background-color: rgb(61, 61, 255);
+}
+
+@media screen and (max-width:950px){
+
+    .card-login{
+        width: 85%;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+
+    .main-login{
+        flex-direction: column;
+    }
+    
+    .left-login{
+        width: 100%;
+        height: auto;
+        background-color: lightseagreen;
+    }
+
+    .left-login-image{
+        width: 40vw;
+        margin-bottom: 20px;
+    }
+
+    .left-login > h1{
+        display: none;
+
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+}
+
